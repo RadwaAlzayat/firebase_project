@@ -47,29 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCuon__FqucUPS0RkQWMWTZ_Kjg7EXOsb8',
-    appId: '1:272628448720:web:d2a1b1dddb3e30f959cdd5',
-    messagingSenderId: '272628448720',
-    projectId: 'flutterproject-e6ee9',
-    authDomain: 'flutterproject-e6ee9.firebaseapp.com',
-    storageBucket: 'flutterproject-e6ee9.firebasestorage.app',
-    measurementId: 'G-97M3ZLS588',
+    apiKey: 'AIzaSyAZh7fnAFUf28biSPuynBzx7APGfEX5phQ',
+    appId: '1:318049091080:web:1ed3887ce25ee238b65bbd',
+    messagingSenderId: '318049091080',
+    projectId: 'fir-mini-project-a3a65',
+    authDomain: 'fir-mini-project-a3a65.firebaseapp.com',
+    storageBucket: 'fir-mini-project-a3a65.firebasestorage.app',
+    measurementId: 'G-X4GQM35RKD',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDwsGC4Ru4XJnzYhN2pywko4kh3sPyb7X8',
-    appId: '1:272628448720:android:7f9afd41347f095859cdd5',
-    messagingSenderId: '272628448720',
-    projectId: 'flutterproject-e6ee9',
-    storageBucket: 'flutterproject-e6ee9.firebasestorage.app',
+    apiKey: 'AIzaSyBQ7twIw3EEVBfHHiM9gZWUL570GYqvNcs',
+    appId: '1:318049091080:android:17736233e26c4255b65bbd',
+    messagingSenderId: '318049091080',
+    projectId: 'fir-mini-project-a3a65',
+    storageBucket: 'fir-mini-project-a3a65.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDpcb7vR5BOi43CxjclFYWspihtOT_qa1A',
-    appId: '1:272628448720:ios:ed9c69578e9cf8de59cdd5',
-    messagingSenderId: '272628448720',
-    projectId: 'flutterproject-e6ee9',
-    storageBucket: 'flutterproject-e6ee9.firebasestorage.app',
-    iosBundleId: 'com.example.firstFlutterProject',
+    apiKey: 'AIzaSyDy8JrvBGLyo6oVOa3CVz4BK4StvnK2lsg',
+    appId: '1:318049091080:ios:dc52933008e38bd5b65bbd',
+    messagingSenderId: '318049091080',
+    projectId: 'fir-mini-project-a3a65',
+    storageBucket: 'fir-mini-project-a3a65.firebasestorage.app',
+    iosBundleId: 'com.example.firebaseMiniProject',
   );
 }

@@ -21,6 +21,22 @@
   "email-already-in-use":"البريد الالكتروني مسجل سابقاً",
   "weak-password":"الرقم السري ضعيف جداً",
    "missing-password":"الرجاء إدخال الرقم السري",
+  
+
+  "user-form":"نموذج البيانات",
+  "saved-data":"البيانات المحفوظة",
+  "name":"الاسم",
+  "please_enter_name": "من فضلك أدخل اسمك",
+  "age":"السن",
+  "please_enter_age": "من فضلك أدخل سنك",
+  "invalid_age": "من فضلك أدخل سن صحيح",
+  "please_enter_hobby": "من فضلك أدخل هوايتك المفضلة",
+  "favourite_hobby":"الهواية المفضلة",
+  "save":"حفظ",
+  "data_saved": "تم حفظ البيانات بنجاح",
+  "view_saved_data":"عرض البيانات المحفوظة",
+
+  "no_data": "لا توجد بيانات محفوظة بعد",
 
   "our_products": "منتجاتنا",
   "hot_offers":"عروض خاصة",

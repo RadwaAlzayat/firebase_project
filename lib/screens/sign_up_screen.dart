@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:first_flutter_project/screens/home_screen.dart';
-import 'package:first_flutter_project/screens/shopping_screen.dart';
+import 'package:firebase_mini_project/screens/user_form.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
@@ -186,16 +185,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           String message;
                           if (e.code == 'weak-password') {
                             message = 'weak-password'.tr();
-                            
                           } else if (e.code == 'email-already-in-use') {
-                            message ='email-already-in-use'.tr();
-
+                            message = 'email-already-in-use'.tr();
                           } else if (e.code == 'invalid-email') {
                             message = 'invalid-email'.tr();
-
                           } else {
-                            message =
-                                e.message ??'something_went_wrong'.tr();
+                            message = e.message ?? 'something_went_wrong'.tr();
                           }
 
                           ScaffoldMessenger.of(
@@ -241,7 +236,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return PageRouteBuilder(
       transitionDuration: const Duration(milliseconds: 500),
       pageBuilder: (context, animation, secondaryAnimation) =>
-          const HomeScreen(),
+          const UserFormScreen(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         // Apply a fade animation when opening the Shopping Screen
         return FadeTransition(opacity: animation, child: child);

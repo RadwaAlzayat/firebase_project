@@ -1,6 +1,6 @@
 {
-    "name": "first_flutter_project",
-    "short_name": "first_flutter_project",
+    "name": "firebase_mini_project",
+    "short_name": "firebase_mini_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

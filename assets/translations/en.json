@@ -20,6 +20,22 @@
   "email-already-in-use":"An account already exists for that email.",
   "weak-password":"The password provided is too weak.",
   "missing-password":"Please enter the password",
+
+
+  "user-form":"User Form",
+  "saved-data":"Saved data",
+  "name":"Name",
+  "please_enter_name":"Please enter your name",
+  "age":"Age",
+  "please_enter_age":"Please enter your age",
+  "invalid_age":"Please enter valid age",
+  "favourite_hobby":"Favouritr Hobby",
+  "please_enter_hobby":"Please enter your hobby",
+  "save":"save",
+  "data_saved": "Data saved successfully",
+  
+  "view_saved_data":"Display saved data",
+  "no_data": "No saved data yet",
   
   "our_products": "Our Products",
   "hot_offers":"Hot Offers",

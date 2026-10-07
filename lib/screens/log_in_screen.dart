@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:first_flutter_project/screens/home_screen.dart';
-import 'package:first_flutter_project/screens/sign_up_screen.dart';
+import 'package:firebase_mini_project/screens/sign_up_screen.dart';
+import 'package:firebase_mini_project/screens/user_form.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -13,8 +13,10 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool _hidePassword = true;
+
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 'welcome'.tr(),
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-            
+
               SizedBox(height: 30),
               Container(
                 decoration: BoxDecoration(
@@ -120,13 +122,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const HomeScreen(),
+                            builder: (context) => const UserFormScreen(),
                           ),
                         );
                       } else {
-                        ScaffoldMessenger.of(
-                          context,
-                        ).showSnackBar(SnackBar(content: Text("login_failed".tr())));
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text("login_failed".tr())),
+                        );
                       }
                     } on FirebaseAuthException catch (e) {
                       String message;
@@ -135,13 +137,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         message = 'invalid-credential'.tr();
                       } else if (e.code == 'invalid-email') {
                         message = 'invalid-email'.tr();
-                      } 
-                      else if(e.code =='missing-password'){
-                         message = 'missing-password'.tr();
-                       }
-                      else {
-                        message =
-                            e.message ?? 'login-failed'.tr();
+                      } else if (e.code == 'missing-password') {
+                        message = 'missing-password'.tr();
+                      } else {
+                        message = e.message ?? 'login-failed'.tr();
                       }
 
                       ScaffoldMessenger.of(
